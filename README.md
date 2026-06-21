@@ -1,3 +1,4 @@
+![Logo](california.png)
 # Milvus RAG with BGE-M3
 
 HotpotQA retrieval pipeline using [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) hybrid embeddings, [Milvus](https://milvus.io/) vector search, and [BAAI/bge-reranker-v2-m3](https://huggingface.co/BAAI/bge-reranker-v2-m3) reranking.
