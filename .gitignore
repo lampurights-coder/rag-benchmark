@@ -1,0 +1,119 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+logs/
+tmp/
+temp/
+.gradio/
+*.tmp
+
+# Milvus / Docker local data (can grow to GB+)
+volumes/
+data/milvus/
+milvus_data/
+etcd_data/
+minio_data/
+
+# Datasets (HotpotQA and other large corpora)
+hotpotqa_data/
+../hotpotqa_data/
+data/
+datasets/
+*.arrow
+*.parquet
+
+# Hugging Face / model caches and downloaded weights
+.cache/
+huggingface/
+.huggingface/
+models/
+checkpoints/
+saved_models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.msgpack
+pytorch_model.bin
+model.safetensors
+tokenizer.json
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.7z
+*.rar
+*.gz
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Cursor (optional local state)
+.cursor/

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "milvus-rag"
+version = "0.1.0"
+description = "HotpotQA RAG with BGE-M3 hybrid retrieval and Milvus"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets",
+    "fastapi",
+    "FlagEmbedding",
+    "gradio",
+    "openai",
+    "pandas",
+    "plotly",
+    "pymilvus",
+    "transformers>=4.46,<5",
+    "uvicorn[standard]",
+]
+
+[project.optional-dependencies]
+gpu = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

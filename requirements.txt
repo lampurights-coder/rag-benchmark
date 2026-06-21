@@ -1,0 +1,13 @@
+datasets
+fastapi
+FlagEmbedding
+gradio
+openai
+pandas
+plotly
+pymilvus
+transformers>=4.46,<5
+uvicorn[standard]
+
+# GPU stack (install together from PyTorch CUDA index — see README):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124

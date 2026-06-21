@@ -1,0 +1,37 @@
+# Edit this file to change runtime settings — no shell exports needed.
+# config.toml values take priority over environment variables.
+# Optional: set CONFIG_PATH=/path/to/other.toml to use a different file.
+
+[milvus]
+uri = "http://localhost:19530"
+collection = "hotpotqa_bge_m3"
+
+[device]
+# auto | cuda | cuda:0 | cpu
+name = "cuda"
+warmup_on_start = true
+
+[embed]
+model = "BAAI/bge-m3"
+dim = 1024
+batch_size = 16
+max_length = 512
+use_fp16 = true
+
+[rerank]
+model = "BAAI/bge-reranker-v2-m3"
+use_fp16 = true
+batch_size = 16
+
+[retrieval]
+sparse_weight = 0.3
+dense_weight = 0.7
+default_retrieve_k = 20
+
+[dataset]
+path = "../hotpotqa_data"
+
+[llm]
+base_url = "http://localhost:8080/v1"
+api_key = "not-needed"
+model = "any-model"
