@@ -218,6 +218,8 @@ If GPU still shows CPU, check for a stale `DEVICE=cpu` in your shell (`echo $DEV
 nvidia-smi
 python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 ```
+## Results
+![Logo](result.png)
 
 Install CUDA PyTorch (not `+cpu`):
 
